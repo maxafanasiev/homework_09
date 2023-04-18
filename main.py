@@ -106,7 +106,7 @@ def get_handler(func):
 @input_error
 def main():
     while bot_working:
-        s = str(input())
+        s = input()
         print(get_handler(command_parse(s)[0])(*command_parse(s)[1]))
 
 
